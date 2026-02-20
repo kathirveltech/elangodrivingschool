@@ -1,0 +1,166 @@
+.employee-list-page {
+  min-height: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Owner / Manager card at top */
+.owner-card {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.owner-card-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.owner-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+}
+
+.owner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.owner-role {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.owner-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Section title */
+.section-title {
+  color: #1a1a2e;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.section-title i {
+  color: #0f3460;
+}
+
+/* Office cards */
+.office-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.office-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.office-card-header {
+  background: linear-gradient(90deg, #ffc107 0%, #ffb300 100%);
+  color: #1a1a2e;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+}
+
+.office-card-body {
+  padding: 1.25rem;
+}
+
+.employee-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f3f5;
+  gap: 1rem;
+}
+
+.employee-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.employee-row:first-child {
+  padding-top: 0;
+}
+
+.employee-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.employee-badge.staff {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.employee-badge.instructor {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.employee-badge i {
+  font-size: 0.9rem;
+}
+
+.employee-name {
+  font-weight: 600;
+  color: #212529;
+  font-size: 1rem;
+}
+
+.employee-phone {
+  font-weight: 500;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .owner-card-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .owner-name {
+    font-size: 1.5rem;
+  }
+
+  .employee-row {
+    flex-wrap: wrap;
+  }
+
+  .employee-name {
+    width: 100%;
+    text-align: right;
+    margin-top: 0.25rem;
+  }
+}
